@@ -1,4 +1,4 @@
-Zerozed (formerly "Zerozed") integration/staging tree
+Zerozed integration/staging tree
 ================================
 
 Website http://www.zerozed.us/
