@@ -1,6 +1,43 @@
 Zerozed integration/staging tree
 ================================
 
+Copyright (c) 2009-2014 Bitcoin Developers
+Copyright (c) 2011-2014 Litecoin Developers
+Copyright (c) 2018 Zerozed Developers
+
+What is Zerozed? (Zero Zed Ecosystem & Algorithm)
+----------------
+
+Zerozed is a Smart Inflation Cryptocurrency which utilises the Diffusion of Innovations to fairly distribute supply evenly among the population.
+
+Mission Goal: 
+
+Create an easily replicable software, hardware and decentralised autonomous organisational structure of which can be used to empower and advance emerging nations seamlessly into the present and beyond into a future without a centralised State run governance system required to sustain it.
+
+________________________________________________________________________________
+THE EASY WAY TO COMPILE
+USE THIS OVA - ALL LIBS DONE
+https://www.dropbox.com/s/txgur0fko3j3hvj/ubuntu.ova?dl=0
+
+git clone https://www.github.com/calems/zerozed
+
+cd zerozed
+
+cd src
+
+make -f makefile.unix
+
+cd ..
+
+qmake
+
+make
+
+./zerozed-qt
+
+________________________________________________________________________________
+
+
 Website http://www.zerozed.us/
 
 Twitter https://twitter.com/zerozed_x0z
@@ -25,30 +62,7 @@ Block Explorer 1 http://18.217.129.225:3001/
 
 Block Explorer 2 https://umine.org/explorer/x0z
 
-
-
-Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 Litecoin Developers
-Copyright (c) 2018 Zerozed Developers
-
-What is Zerozed? (Zero Zed Ecosystem & Algorithm)
-----------------
-
-Zerozed is a Smart Inflation Cryptocurrency which utilises the Diffusion of Innovations to fairly distribute supply evenly among the population.
-
-Mission Goal: 
-
-Create an easily replicable software, hardware and decentralised autonomous organisational structure of which can be used to empower and advance emerging nations seamlessly into the present and beyond into a future without a centralised State run governance system required to sustain it.
-
-In one line? An experiment on Blockspace Economics using a Diffusion of Innovations based incentive model.
-
-Zerozed is a litecoin v0.8 fork using scrypt as a proof-of-work algorithm with 32MB block sizes and the diffusion of innovations in replacement of the standard halving adopted by 99% of cryptocurrencies. Everything else is pretty normal. Launched under "Zerozed" branding.
- - 32 MB Blocksize (On-Chain Scaling)
- - 2 hour difficulty retarget
- - 2 minute block targets
- - 99% of coins produced over 5 years using DoI minting schedule
- - ~25 million total coins
- - +much more planned (Starting with Atomic Swaps)
+________________________________________________________________________________
 
 Fifty percent of the world's net wealth belongs to one percent of the population. The emergence of Cryptocurrency has brought about a rapid disruption across many industries but none more than Finance and Economics. Due to the inherent flaw in Bitcoin and by extension 99% of Blockchain based Distributed Ledger Technologies, "Crypto" has succumbed to the same fate as Fiat. Riddled with systemic issues and mass centralisation of supply. 
     This is all due to the inflation model otherwise known as the "halving-mechanism", one of which no one has seemingly questioned. This paper seeks to solve these problems with an alternative model for incentive and inflation. In replacement to the standard halving-mechanism employed by the greater majority of Cryptocurrencies to-date, we demonstrate the modeling of an inflation schedule guided by the theory, Diffusion of Innovations.
@@ -56,12 +70,10 @@ Fifty percent of the world's net wealth belongs to one percent of the population
 We have proposed an inflation model for Cryptocurrencies yet to launch, as well as coins existing today, to set or retarget subsidy schedules in order to follow a more sustainable and diffusion-viable incentive model. By utilising the Diffusion of Innovations we can establish the Normal Distribution within a socioeconomic environment and the Zerozed team have set out to prove this via bootstrapping a brave new Cryptocurrency with our MVP, x0z.
     The Zerozed team will endeavour to contribute and assist with broader crypto innovations and interoperability in order to provide all the necessary conditions which provide the best chance of survival within the ever evolving space. If proven successful, the Zerozed project is expected to thrive well beyond the initial inflation cycle and is set to bring to light information that will assist the industry as a whole, in turn gaining broader acceptance and diffusion of Cryptocurrencies and Distributed Ledger Technologies throughout society.
 
-Compiling is currently a nightmare. Sorry.
+________________________________________________________________________________
 
-Easiest to compile with this untill rebase to Bitcoin ABC is done http://old-releases.ubuntu.com/releases/16.04.3/ubuntu-16.04.3-desktop-amd64.iso
-
-(this might help as well)
-
+THE HARD WAY TO COMPILE
+http://old-releases.ubuntu.com/releases/16.04.3/ubuntu-16.04.3-desktop-amd64.iso
 https://stackoverflow.com/questions/28958570/dependency-failure-while-installing-libboost-all-dev-on-ubuntu-core-14-04 https://askubuntu.com/questions/300872/help-installing-libboost-system-dev-et-al
 
 
@@ -88,6 +100,8 @@ sudo apt-get install libzmq3-dev
 sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
 sudo apt-get install libqt4-dev libprotobuf-dev protobuf-compiler
+
+________________________________________________________________________________
 
 License
 -------
