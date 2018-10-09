@@ -1111,18 +1111,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-    //// DOI ////
 
-//int64 static GetBlockValue(int nHeight, int64 nFees)
-//{
-//    int64 nSubsidy = 50 * COIN;
-//
-//    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-//    nSubsidy >>= (nHeight / 840000); // Zerozed: 840k blocks in ~4 years
-//
-//    return nSubsidy + nFees;
-//}
-//
 static const int64 nTargetTimespan = 0.08 * 24 * 60 * 60; // Zerozed: 2 hours / 60 Blocks
 static const int64 nTargetSpacing = 2 * 60; // Zerozed: 2 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
