@@ -1095,9 +1095,9 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     double Xheight = 0;
     if (nHeight == 1)
     {
-        nSubsidy = 2000000.0 * COIN;
+        nSubsidy = 2000000.0 * COIN; // Premine 2 Million
     }
-    else if (nHeight > 1 && nHeight < 1274030)
+    else if (nHeight > 1 && nHeight < 1274030) // Sets max block height
     {
         Xheight = nHeight * 0.0000038051750381;
         nsubsidy_function = ((3583.5719028332051*(pow(Xheight,8))) -(67959.212902381332*(pow(Xheight,7))) + (500144.30431838805*(pow(Xheight,6))) -(1806581.9194472283*(pow(Xheight,5))) +  (3537339.4754780694*(pow(Xheight,4))) -(4712758.2800668897*(pow(Xheight,3))) + (4535015.6408610735*(pow(Xheight,2))) + (834937.06954081857*Xheight) + (1000845.7073113875));
@@ -1105,7 +1105,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     }
     else
     {
-        nSubsidy = 0 * COIN;
+        nSubsidy = 0 * COIN; // Coins cease production
     }
 
     return nSubsidy + nFees;
